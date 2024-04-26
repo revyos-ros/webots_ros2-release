@@ -1,0 +1,41 @@
+From d880e393cd0d5de57c046246e5e22940311913ca Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Fri, 26 Apr 2024 17:39:55 +0800
+Subject: [PATCH] add python-3.11.patch.
+
+---
+ debian/patches/python-3.11.patch | 13 +++++++++++++
+ debian/patches/series            |  1 +
+ 2 files changed, 14 insertions(+)
+ create mode 100644 debian/patches/python-3.11.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/python-3.11.patch b/debian/patches/python-3.11.patch
+new file mode 100644
+index 000000000..52130e9f1
+--- /dev/null
++++ b/debian/patches/python-3.11.patch
+@@ -0,0 +1,13 @@
++diff --git a/CMakeLists.txt b/CMakeLists.txt
++index 801385bfc..9fe6b6066 100644
++--- a/CMakeLists.txt
+++++ b/CMakeLists.txt
++@@ -31,7 +31,7 @@ find_package(TinyXML2 REQUIRED)
++ find_package(yaml-cpp REQUIRED)
++ 
++ if($ENV{ROS_DISTRO} MATCHES "humble")
++-  find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+++  find_package(Python 3.11 EXACT REQUIRED COMPONENTS Development)
++ elseif($ENV{ROS_DISTRO} MATCHES "iron")
++   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
++ elseif($ENV{ROS_DISTRO} MATCHES "rolling")
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 000000000..4f370b6b0
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++python-3.11.patch
+-- 
+2.41.0
+
