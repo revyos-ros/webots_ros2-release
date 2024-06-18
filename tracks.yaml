@@ -1,3 +1,4 @@
+release_repo_url: git@github.com:revyos-ros/webots_ros2-release
 tracks:
   crystal:
     actions:
