@@ -171,7 +171,7 @@ tracks:
     last_version: 2023.1.2
     name: webots_ros2
     patches: null
-    release_inc: '5'
+    release_inc: '6'
     release_repo_url: null
     release_tag: 2023.1.2
     ros_distro: jazzy
