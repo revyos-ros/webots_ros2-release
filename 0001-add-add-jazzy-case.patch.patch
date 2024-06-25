@@ -1,0 +1,55 @@
+From e3abe1619d3174ef970e70969957cc9a679179da Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Tue, 25 Jun 2024 10:57:15 +0800
+Subject: [PATCH] add add-jazzy-case.patch
+
+see https://github.com/cyberbotics/webots_ros2/pull/931/files
+---
+ debian/patches/0001-add-jazzy-case.patch | 26 ++++++++++++++++++++++++
+ debian/patches/series                    |  1 +
+ 2 files changed, 27 insertions(+)
+ create mode 100644 debian/patches/0001-add-jazzy-case.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/0001-add-jazzy-case.patch b/debian/patches/0001-add-jazzy-case.patch
+new file mode 100644
+index 000000000..4f771751a
+--- /dev/null
++++ b/debian/patches/0001-add-jazzy-case.patch
+@@ -0,0 +1,26 @@
++From 1f4775c4fcb5042d1b65fd22f5590380bc8968e3 Mon Sep 17 00:00:00 2001
++From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
++Date: Tue, 25 Jun 2024 10:56:24 +0800
++Subject: [PATCH] add jazzy case.
++
++see https://github.com/cyberbotics/webots_ros2/pull/931/files
++---
++ CMakeLists.txt | 2 ++
++ 1 file changed, 2 insertions(+)
++
++diff --git a/CMakeLists.txt b/CMakeLists.txt
++index ec4986a34..94678b65e 100644
++--- a/CMakeLists.txt
+++++ b/CMakeLists.txt
++@@ -6,6 +6,8 @@ if($ENV{ROS_DISTRO} MATCHES "humble")
++   add_compile_definitions(HUMBLE)
++ elseif($ENV{ROS_DISTRO} MATCHES "iron")
++   add_compile_definitions(IRON)
+++elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
+++  add_compile_definitions(JAZZY)
++ elseif($ENV{ROS_DISTRO} MATCHES "rolling")
++   add_compile_definitions(ROLLING)
++ endif()
++-- 
++2.41.0
++
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 000000000..3b1f6273f
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++0001-add-jazzy-case.patch
+-- 
+2.41.0
+
