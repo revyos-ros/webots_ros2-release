@@ -1,0 +1,26 @@
+From 1f4775c4fcb5042d1b65fd22f5590380bc8968e3 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Tue, 25 Jun 2024 10:56:24 +0800
+Subject: [PATCH] add jazzy case.
+
+see https://github.com/cyberbotics/webots_ros2/pull/931/files
+---
+ CMakeLists.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ec4986a34..94678b65e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -6,6 +6,8 @@ if($ENV{ROS_DISTRO} MATCHES "humble")
+   add_compile_definitions(HUMBLE)
+ elseif($ENV{ROS_DISTRO} MATCHES "iron")
+   add_compile_definitions(IRON)
++elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
++  add_compile_definitions(JAZZY)
+ elseif($ENV{ROS_DISTRO} MATCHES "rolling")
+   add_compile_definitions(ROLLING)
+ endif()
+-- 
+2.41.0
+
