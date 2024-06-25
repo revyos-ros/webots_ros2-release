@@ -1,0 +1,25 @@
+From 4c45ba03f4f3098c89159c69147b87f17e1fdc6d Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Tue, 25 Jun 2024 10:52:59 +0800
+Subject: [PATCH] add jazzy python.
+
+---
+ CMakeLists.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 801385bfc..ad5f543d3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -34,6 +34,8 @@ if($ENV{ROS_DISTRO} MATCHES "humble")
+   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+ elseif($ENV{ROS_DISTRO} MATCHES "iron")
+   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
++elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
++  find_package(Python 3.11 EXACT REQUIRED COMPONENTS Development)
+ elseif($ENV{ROS_DISTRO} MATCHES "rolling")
+   find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
+ endif()
+-- 
+2.41.0
+
