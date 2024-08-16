@@ -1,4 +1,4 @@
-From d880e393cd0d5de57c046246e5e22940311913ca Mon Sep 17 00:00:00 2001
+From 9bf13c35fdcf8105a21205e9f40de2c16510bc2c Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Fri, 26 Apr 2024 17:39:55 +0800
 Subject: [PATCH] add python-3.11.patch.
@@ -37,5 +37,5 @@ index 000000000..4f370b6b0
 @@ -0,0 +1 @@
 +python-3.11.patch
 -- 
-2.41.0
+2.45.2
 
