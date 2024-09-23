@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:revyos-ros/webots_ros2-release
+release_repo_url: git@github.com:revyos-ros/webots_ros2-release.git
 tracks:
   crystal:
     actions:
