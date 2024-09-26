@@ -1,4 +1,4 @@
-From c577934f805a3455f44e46fc133a45dfe5cc788a Mon Sep 17 00:00:00 2001
+From 959e2340d595dd49d27a5dfac0e812a2d23c8519 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 25 Jun 2024 10:54:15 +0800
 Subject: [PATCH] add jazzy case python3.11
@@ -50,5 +50,5 @@ index 000000000..bb946aa5c
 @@ -0,0 +1 @@
 +0001-add-jazzy-python.patch
 -- 
-2.41.0
+2.45.2
 
