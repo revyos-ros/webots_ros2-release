@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 801385bfc..9fe6b6066 100644
+index 8856bcb90..18fca377a 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -31,7 +31,7 @@ find_package(TinyXML2 REQUIRED)
@@ -8,6 +8,6 @@ index 801385bfc..9fe6b6066 100644
  if($ENV{ROS_DISTRO} MATCHES "humble")
 -  find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
 +  find_package(Python 3.11 EXACT REQUIRED COMPONENTS Development)
- elseif($ENV{ROS_DISTRO} MATCHES "iron")
-   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+ elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
+   find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
  elseif($ENV{ROS_DISTRO} MATCHES "rolling")
