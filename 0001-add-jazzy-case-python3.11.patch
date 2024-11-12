@@ -1,7 +1,7 @@
-From bc92cbb1cd7dfd2c43d3203d72216385b020f689 Mon Sep 17 00:00:00 2001
+From 71ff0472f4db1bb75db70546c75d6c4cd0eacbd9 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 25 Jun 2024 10:54:15 +0800
-Subject: [PATCH] add jazzy case python3.11
+Subject: [PATCH 1/2] add jazzy case python3.11
 
 see also https://github.com/cyberbotics/webots_ros2/pull/931/files
 ---
@@ -50,5 +50,5 @@ index 000000000..bb946aa5c
 @@ -0,0 +1 @@
 +0001-add-jazzy-python.patch
 -- 
-2.45.2
+2.46.0
 
