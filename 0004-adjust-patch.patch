@@ -1,0 +1,85 @@
+From 2c5cb1db3acc4fe8d3c50f89befa6bfc28318923 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Thu, 21 Nov 2024 13:57:18 +0800
+Subject: [PATCH 4/4] adjust patch
+
+---
+ debian/patches/0001-add-jazzy-python.patch    | 25 -------------------
+ .../0001-adjust-jazzy-python-version.patch    | 25 +++++++++++++++++++
+ debian/patches/series                         |  2 +-
+ 3 files changed, 26 insertions(+), 26 deletions(-)
+ delete mode 100644 debian/patches/0001-add-jazzy-python.patch
+ create mode 100644 debian/patches/0001-adjust-jazzy-python-version.patch
+
+diff --git a/debian/patches/0001-add-jazzy-python.patch b/debian/patches/0001-add-jazzy-python.patch
+deleted file mode 100644
+index 4417b430c..000000000
+--- a/debian/patches/0001-add-jazzy-python.patch
++++ /dev/null
+@@ -1,25 +0,0 @@
+-From 4c45ba03f4f3098c89159c69147b87f17e1fdc6d Mon Sep 17 00:00:00 2001
+-From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+-Date: Tue, 25 Jun 2024 10:52:59 +0800
+-Subject: [PATCH] add jazzy python.
+-
+----
+- CMakeLists.txt | 2 ++
+- 1 file changed, 2 insertions(+)
+-
+-diff --git a/CMakeLists.txt b/CMakeLists.txt
+-index 801385bfc..ad5f543d3 100644
+---- a/CMakeLists.txt
+-+++ b/CMakeLists.txt
+-@@ -34,6 +34,8 @@ if($ENV{ROS_DISTRO} MATCHES "humble")
+-   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+- elseif($ENV{ROS_DISTRO} MATCHES "iron")
+-   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+-+elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
+-+  find_package(Python 3.11 EXACT REQUIRED COMPONENTS Development)
+- elseif($ENV{ROS_DISTRO} MATCHES "rolling")
+-   find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
+- endif()
+--- 
+-2.41.0
+-
+diff --git a/debian/patches/0001-adjust-jazzy-python-version.patch b/debian/patches/0001-adjust-jazzy-python-version.patch
+new file mode 100644
+index 000000000..f5286528f
+--- /dev/null
++++ b/debian/patches/0001-adjust-jazzy-python-version.patch
+@@ -0,0 +1,25 @@
++From c37b4ee11cdaf7af6385aeb0a12ebdc14c331472 Mon Sep 17 00:00:00 2001
++From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
++Date: Tue, 12 Nov 2024 16:27:31 +0800
++Subject: [PATCH] adjust jazzy python version.
++
++---
++ CMakeLists.txt | 2 +-
++ 1 file changed, 1 insertion(+), 1 deletion(-)
++
++diff --git a/CMakeLists.txt b/CMakeLists.txt
++index 8856bcb90..b279b164b 100644
++--- a/CMakeLists.txt
+++++ b/CMakeLists.txt
++@@ -33,7 +33,7 @@ find_package(yaml-cpp REQUIRED)
++ if($ENV{ROS_DISTRO} MATCHES "humble")
++   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
++ elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
++-  find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
+++  find_package(Python 3.11 EXACT REQUIRED COMPONENTS Development)
++ elseif($ENV{ROS_DISTRO} MATCHES "rolling")
++   find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
++ endif()
++-- 
++2.46.0
++
+diff --git a/debian/patches/series b/debian/patches/series
+index bb946aa5c..fee8c5eb6 100644
+--- a/debian/patches/series
++++ b/debian/patches/series
+@@ -1 +1 @@
+-0001-add-jazzy-python.patch
++0001-adjust-jazzy-python-version.patch
+-- 
+2.46.0
+
