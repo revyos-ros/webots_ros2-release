@@ -1,4 +1,4 @@
-From 0499ca1441eb29bf91cb643b930c4211d3cafbd4 Mon Sep 17 00:00:00 2001
+From 26f3707a66826a31a25a80b3b334825bf8c53fa6 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Thu, 21 Nov 2024 14:12:03 +0800
 Subject: [PATCH 2/2] Revert "add add-jazzy-case.patch"
