@@ -1,4 +1,4 @@
-From c37b4ee11cdaf7af6385aeb0a12ebdc14c331472 Mon Sep 17 00:00:00 2001
+From 996a67ebd206722c2c7f97dbef93389c45cd461a Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 12 Nov 2024 16:27:31 +0800
 Subject: [PATCH 2/4] adjust jazzy python version.
