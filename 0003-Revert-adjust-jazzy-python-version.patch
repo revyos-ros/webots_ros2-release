@@ -1,4 +1,4 @@
-From c43ebb11579de0f868776e2381bc86a7af0967b3 Mon Sep 17 00:00:00 2001
+From f45986a42170057a2ec9daaffd7b8b805ff46569 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Thu, 21 Nov 2024 13:58:03 +0800
 Subject: [PATCH 3/4] Revert "adjust jazzy python version."
@@ -22,5 +22,5 @@ index b279b164b..8856bcb90 100644
    find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
  endif()
 -- 
-2.46.0
+2.48.1
 

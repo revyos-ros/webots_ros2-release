@@ -1,4 +1,4 @@
-From 444fe7751512af026e25b80ddccbf69e2036bfb4 Mon Sep 17 00:00:00 2001
+From eae4981854a6aca9eee52f0551e189e068d0f05b Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Thu, 21 Nov 2024 13:57:18 +0800
 Subject: [PATCH 4/4] adjust patch
@@ -81,5 +81,5 @@ index bb946aa5c..fee8c5eb6 100644
 -0001-add-jazzy-python.patch
 +0001-adjust-jazzy-python-version.patch
 -- 
-2.46.0
+2.48.1
 
