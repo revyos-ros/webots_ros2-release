@@ -1,4 +1,4 @@
-From ceed485bbc0971ff069194e4d9bd4bf802d83204 Mon Sep 17 00:00:00 2001
+From 301bba02f04ca47f4b22fb90839b27400b113bc2 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 25 Jun 2024 10:57:15 +0800
 Subject: [PATCH 1/2] add add-jazzy-case.patch
