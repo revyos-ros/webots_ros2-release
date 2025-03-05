@@ -1,4 +1,4 @@
-From c6f2da19f94fe5cac31f2365551e16c2ddd91f92 Mon Sep 17 00:00:00 2001
+From ee4621474fb78f33688567df1210f5610bd4d176 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 12 Nov 2024 16:27:31 +0800
 Subject: [PATCH 2/4] adjust jazzy python version.
@@ -8,11 +8,11 @@ Subject: [PATCH 2/4] adjust jazzy python version.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 8856bcb90..b279b164b 100644
+index 693d9eda9..be3a51022 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -33,7 +33,7 @@ find_package(yaml-cpp REQUIRED)
- if($ENV{ROS_DISTRO} MATCHES "humble")
+@@ -35,7 +35,7 @@ if($ENV{ROS_DISTRO} MATCHES "humble")
+ elseif($ENV{ROS_DISTRO} MATCHES "iron")
    find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
  elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
 -  find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
