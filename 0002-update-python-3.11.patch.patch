@@ -1,4 +1,4 @@
-From 9a0bdea6a505fa8f58d90bd07d9e5f1b7ff9f1c3 Mon Sep 17 00:00:00 2001
+From 158b7d7a56b0aa312f32145cd053230e8f968878 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Wed, 6 Nov 2024 11:10:05 +0800
 Subject: [PATCH 2/3] update python-3.11.patch.
