@@ -1,3 +1,40 @@
+## webots_ros2 (humble) - 2025.0.0-3
+
+The packages in the `webots_ros2` repository were released into the `humble` distro by running `/root/venv/bin/bloom-release -r humble webots_ros2 --override-release-repository-push-url git@github.com:revyos-ros/webots_ros2-release.git` on `Mon, 17 Mar 2025 03:57:04 -0000`
+
+These packages were released:
+- `webots_ros2`
+- `webots_ros2_control`
+- `webots_ros2_crazyflie`
+- `webots_ros2_driver`
+- `webots_ros2_epuck`
+- `webots_ros2_husarion`
+- `webots_ros2_importer`
+- `webots_ros2_mavic`
+- `webots_ros2_msgs`
+- `webots_ros2_tesla`
+- `webots_ros2_tests`
+- `webots_ros2_tiago`
+- `webots_ros2_turtlebot`
+- `webots_ros2_universal_robot`
+
+Version of package(s) in repository `webots_ros2`:
+
+- upstream repository: https://github.com/cyberbotics/webots_ros2.git
+- release repository: https://github.com/revyos-ros/webots_ros2-release.git
+- rosdistro version: `2025.0.0-2`
+- old version: `2025.0.0-2`
+- new version: `2025.0.0-3`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## webots_ros2 (jazzy) - 2025.0.0-1
 
 The packages in the `webots_ros2` repository were released into the `jazzy` distro by running `/root/venv/bin/bloom-release -r jazzy webots_ros2 --override-release-repository-push-url git@github.com:revyos-ros/webots_ros2-release.git --edit` on `Wed, 05 Mar 2025 04:27:13 -0000`
