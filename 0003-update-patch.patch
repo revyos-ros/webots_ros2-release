@@ -1,0 +1,32 @@
+From b3a1fe042af5bb1b34c1da59e91bb004a01c1a63 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <z572@z572.online>
+Date: Mon, 17 Mar 2025 11:46:12 +0800
+Subject: [PATCH 3/3] update patch
+
+---
+ debian/patches/python-3.11.patch | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/debian/patches/python-3.11.patch b/debian/patches/python-3.11.patch
+index 3ca26c810..87fc52c1f 100644
+--- a/debian/patches/python-3.11.patch
++++ b/debian/patches/python-3.11.patch
+@@ -1,5 +1,5 @@
+ diff --git a/CMakeLists.txt b/CMakeLists.txt
+-index 8856bcb90..18fca377a 100644
++index 693d9eda9..a9e62f146 100644
+ --- a/CMakeLists.txt
+ +++ b/CMakeLists.txt
+ @@ -31,7 +31,7 @@ find_package(TinyXML2 REQUIRED)
+@@ -8,6 +8,6 @@ index 8856bcb90..18fca377a 100644
+  if($ENV{ROS_DISTRO} MATCHES "humble")
+ -  find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+ +  find_package(Python 3.11 EXACT REQUIRED COMPONENTS Development)
++ elseif($ENV{ROS_DISTRO} MATCHES "iron")
++   find_package(Python 3.10 EXACT REQUIRED COMPONENTS Development)
+  elseif($ENV{ROS_DISTRO} MATCHES "jazzy")
+-   find_package(Python 3.12 EXACT REQUIRED COMPONENTS Development)
+- elseif($ENV{ROS_DISTRO} MATCHES "rolling")
+-- 
+2.48.1
+

@@ -1,7 +1,7 @@
-From a74b5ef1c7c19f5569af3804d103df8ab49fbef5 Mon Sep 17 00:00:00 2001
+From 9a0bdea6a505fa8f58d90bd07d9e5f1b7ff9f1c3 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Wed, 6 Nov 2024 11:10:05 +0800
-Subject: [PATCH 2/2] update python-3.11.patch.
+Subject: [PATCH 2/3] update python-3.11.patch.
 
 ---
  debian/patches/python-3.11.patch | 6 +++---
